@@ -78,3 +78,28 @@
         transform: translateY(0);
     }
 }
+
+.btn-feature {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary-light;
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid $color-primary-light;
+        padding: .5rem 2rem;
+        border-radius: 10rem;
+        margin-top: 1.5rem;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    }
+}

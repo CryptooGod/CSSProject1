@@ -179,13 +179,34 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.btn-feature:link, .btn-feature:visited {
+  font-size: 1.6rem;
+  color: #d34e01;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #d34e01;
+  padding: .5rem 2rem;
+  border-radius: 10rem;
+  margin-top: 1.5rem;
+  transition: all .2s; }
+
+.btn-feature:hover {
+  background-color: #753713cc;
+  color: #FFF;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+
+.btn-feature:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
 .composition {
   position: relative; }
   .composition__photo {
     width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
-    position: absolute; }
+    position: absolute;
+    transition: all .3s;
+    outline-offset: .5rem; }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
@@ -196,8 +217,38 @@ body {
       left: 20%;
       top: 10rem; }
     .composition__photo:hover {
-      transform: scale(1.3);
-      z-index: 3; }
+      outline: 1rem solid #753713cc;
+      transform: scale(1.1) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 2rem rgba(0, 0, 0, 0.4);
+      z-index: 10; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all .2s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #753713cc, #2c2b2bcc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
+.card {
+  background-color: orangered;
+  height: 50rem;
+  transition: all 1s; }
+  .card:hover {
+    transform: rotateY(180deg); }
 
 .row {
   max-width: 114rem;
@@ -250,5 +301,20 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding-top: 30rem;
+  padding-bottom: 40rem;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 25rem 0;
+  background-image: linear-gradient(to right bottom, #2c2b2bcc, #753713cc), url(../img/featurefitness.jpg);
+  background-size: cover;
+  margin-top: -11.5rem;
+  transform: skewY(-7deg); }
+  .section-features > * {
+    transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -11.5rem; }
