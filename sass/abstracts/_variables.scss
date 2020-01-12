@@ -11,10 +11,17 @@ Dark green: #28b485
 $color-primary: #753713cc;
 $color-primary-light: #d34e01;
 $color-primary-dark: #2c2b2bcc;
+$color-primary-dark-card: #923703;
 
 $color-grey-dark: #777;
 $color-grey-light: #eee;
 $color-grey-light-background: #f7f7f7;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
 
 $color-white: #FFF;
 $color-black: #000;
@@ -26,3 +33,11 @@ $gutter-horizontal: 6rem;
 
 //Font
 $default-font-size: 1.6rem;
+
+//Box shadow
+$light-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+$btn-hover-shadow: 0 1rem 2rem rgba($color-black, .15);
+$btn-active-shadow: 0 .5rem 1rem rgba($color-black, .15);
+
+//Border Radius
+$default-border-radius: 3px;
