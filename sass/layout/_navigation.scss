@@ -22,7 +22,7 @@
             right: 4rem;
         }
 
-        @include respond(tab-port) {
+        @include respond(phone) {
             top: 3rem;
             right: 3rem;
         }
@@ -44,9 +44,9 @@
             right: 4.5rem;
         }
 
-        @include respond(tab-port) {
-            top: 3rem;
-            right: 3rem;
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 3.5rem;
         }
     }
 
